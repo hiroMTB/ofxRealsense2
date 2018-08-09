@@ -48,7 +48,7 @@ config.make
 
 # Compiled Dynamic libraries
 *.so
-*.dylib
+#*.dylib
 
 # Compiled Static libraries
 *.lai
