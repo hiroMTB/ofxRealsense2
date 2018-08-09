@@ -1,0 +1,147 @@
+# ignore all
+# check another .ignore file in addons folder
+
+# Xcode Project
+xcuserdata/
+*.entitlements
+build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+*.xccheckout
+*.moved-aside
+.xcscmblueprint
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+contents.xcworkspacedata
+*.xcconfig
+*.xcscheme
+*.pbxproj
+*.plist
+Makefile
+config.make
+
+#OSX
+.DS_Store
+*.swp
+*~.nib
+# Thumbnails
+._*
+
+*~
+.svn/
+*.wav
+*.app/
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+
+# xml
+*.*.bak
+
+#emacs
+*.*~
+
+#movie file
+*.mov
+*.avi
+*.mpeg
+#*.mp4
+
+#image file
+#*.png
+*.jpg
+*.jpeg
+*.tiff
+*.tif
+*.gif
+
+#3d
+*.abc
+*.obj
+*.dae
+
+#gui setting
+_settings.xml
+#.gitignore#
+
+#binary file
+*.bin
+*.dsYM
+
+#icon
+*.icns
+
+*.psd
+*.eps
+#*.svg
+*.pdf
+*.ai
+
+*.aif
+*.aiff
+*.wav
+*.mp3
+*.raw
+*.pkf
+
+*.zip
+*.gml
+
+*.xcscmblueprint
+
+# Windows
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
+
+# Visual Studio
+*.sdf
+*.opensdf
+*.suo
+*.pdb
+*.ilk
+*.aps
+ipch/
+*.db
+*.sln
+*.vcxproj
+*.dll
+*.exe
+*.tlog
+*.vcxproj.user
+*.filters
+*.log
+*.res
+icon.rc
+*.lib
+*.exp
+*.db-shm
+*.db-wal
+*.opendb
+# *.mp4
+*.hpv
+*.iobj
+*.ipdb
+
+addon_config.make
