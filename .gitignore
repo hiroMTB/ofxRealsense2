@@ -143,5 +143,3 @@ icon.rc
 *.hpv
 *.iobj
 *.ipdb
-
-addon_config.make
