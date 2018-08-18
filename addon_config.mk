@@ -7,19 +7,23 @@ meta:
 
 common:
 
-    ADDON_INCLUDES +=  libs/realsense2/include/
-    ADDON_INCLUDES += /usr/local/opt/libusb/include/libusb-1.0
+	ADDON_INCLUDES =  libs/realsense2/include/
 
 osx:
-	ADDON_LIBS  = libs/realsense2/lib/osx/librealsense2.a
-	ADDON_LIBS += libs/realsense2/lib/osx/librealsense-file.a
-    ADDON_LIBS += /usr/local/opt/libusb/lib/libusb-1.0.a
+    ADDON_LDFLAGS = -rpath ../../../../addons/ofxRealsense2/libs/realsense2/lib/osx
+    ADDON_INCLUDES += /usr/local/opt/libusb/include/libusb-1.0
+
+    #ADDON_LIBS += /usr/local/opt/libusb/lib/libusb-1.0.0.dylib
 
 	# osx/iOS only, any framework that should be included in the project
 	ADDON_FRAMEWORKS += IOKit
 	ADDON_FRAMEWORKS += OpenGL
 	ADDON_FRAMEWORKS += Cocoa
 	ADDON_FRAMEWORKS += CoreVideo
+
+vs:	
+	# sometimes this does not work, please manually copy files inside of dlls_to_copy folder
+	ADDON_DLLS_TO_COPY  = dlls_to_copy
 
 linux64:
 linuxarmv6l:
