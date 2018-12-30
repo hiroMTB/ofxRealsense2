@@ -1,13 +1,20 @@
+
+![Screenshot](ss.png)
+
+[![Build Status](https://travis-ci.org/hiroMTB/ofxRealsense2.svg?branch=master)](https://travis-ci.org/hiroMTB/ofxRealsense2)
+[![Build status](https://ci.appveyor.com/api/projects/status/iolvq2tckcgdcdrp?svg=true)](https://ci.appveyor.com/project/hiroMTB/ofxrealsense2)
+
 # ofxRealsense2
-This repos is openFrameworks addon fo [Intel® RealSense™ SDK 2.0](https://github.com/IntelRealSense/librealsense). You can test your D400 series camera quickly. If you dont have device, you cann still playback BAG files and see how it works (for example performance, postprocessing, depth quality, etc)
+This repos is openFrameworks addon for [Intel® RealSense™ SDK 2.0](https://github.com/IntelRealSense/librealsense). You can test your D400 series camera quickly. If you dont have device, you cann still playback BAG files and see how it works (for example performance, postprocessing, depth quality, etc)
+
 
 ## Development period
 - 2018.7 ~ active
 
 ## Version
-- Realsense 2.14.1 (released on 2018.7)
+- Realsense 2.14.1 (released on 2018.7, this is not latest)
 - libusb 1.0.22
-- openFrameworks 0.10.0
+- openFrameworks 0.10.0, 0.10.1
 
 ## TODO
 - [x] OSX support
@@ -15,7 +22,7 @@ This repos is openFrameworks addon fo [Intel® RealSense™ SDK 2.0](https://git
 - [ ] Linux support
 - [x] add ci scripts
 - [ ] add postprocessing example
-- [ ] add bag file playback example
+- [x] add bag file playback example
 
 ## Install Realsense SDK
 Follow the official instalaction [here](https://realsense.intel.com/sdk-2/) and check you can launch realsense viewer.
