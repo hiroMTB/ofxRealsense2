@@ -21,10 +21,7 @@ osx:
 	ADDON_FRAMEWORKS += Cocoa
 	ADDON_FRAMEWORKS += CoreVideo
 
-vs:	
-	# sometimes this does not work, please manually copy files inside of dlls_to_copy folder
-	ADDON_DLLS_TO_COPY  = dlls_to_copy
-
+vs:
 linux64:
 linuxarmv6l:
 linuxarmv7l:
