@@ -5,14 +5,11 @@ void ofApp::setup(){
     ofSetFrameRate(30);
     ofSetVerticalSync(true);
     ofSetLogLevel(OF_LOG_NOTICE);
-    ofDisableLighting();
-    ofEnableDepthTest();
-    ofEnableAlphaBlending();
-    ofEnableAntiAliasing();
     
-    mesh.setMode(OF_PRIMITIVE_POINTS);
-    
-    pipe.start();
+	// if you see app crash at runtime, please check,
+	// 1. Copy Intel.Realsense.dll and realsense2.dll in to /bin? 
+	// 2. Unplug and re-connect Realsense camera and restart app.
+	pipe.start();
 }
 
 void ofApp::update(){
@@ -32,7 +29,7 @@ void ofApp::update(){
                 const rs2::vertex v = vs[i];
                 glm::vec3 v3(v.x,v.y,v.z);
                 mesh.addVertex(v3);
-                mesh.addColor(ofFloatColor(0,0,ofMap(v.z, 0, 6, 1, 0), 0.8));
+                mesh.addColor(ofFloatColor(0,0,ofMap(v.z, 2, 6, 1, 0), 0.8));
             }
         }
     }
@@ -53,7 +50,7 @@ void ofApp::draw(){
     ofDrawGridPlane(1, 5, true);
     ofPopMatrix();
     
-    mesh.draw();
+    mesh.drawVertices();
     
     cam.end();
 }
